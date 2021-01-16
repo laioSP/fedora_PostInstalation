@@ -6,8 +6,8 @@ ICONPATH=$HOMEUSER_PATH/Pictures/foundryIcons
 function nukeXIcon() {
 
 	NukeX=/usr/share/applications/NukeXIcon.desktop
-	NUKELINK=Nuke12.2
-	NUKEVERSION=Nuke12.2v3
+	NUKEVERSION=$(ls $HOMEUSER_PATH | grep -i "nuke*")
+	NUKELINK=$(ls $HOMEUSER_PATH/$NUKEVERSION | grep  "Nuke1")
 
 	touch $NukeX
 	echo "[Desktop Entry]" > $NukeX
@@ -23,8 +23,8 @@ function nukeXIcon() {
 function nukeStudioIcon() {
 
 	NukeStudio=/usr/share/applications/NukeStudio.desktop
-	NUKELINK=Nuke12.2
-	NUKEVERSION=Nuke12.2v3
+	NUKEVERSION=$(ls $HOMEUSER_PATH | grep -i "nuke*")
+	NUKELINK=$(ls $HOMEUSER_PATH/$NUKEVERSION | grep  "Nuke1")
 
 	touch $NukeStudio
 	echo "[Desktop Entry]" > $NukeStudio
@@ -40,7 +40,7 @@ function nukeStudioIcon() {
 function mariIcon() {
 
 	Mari=/usr/share/applications/Mari.desktop
-	MARIVERSION=Mari4.6v4
+	MARIVERSION=$( ls $HOMEUSER_PATH | grep -i "mari")
 
 	touch $Mari
 	echo "[Desktop Entry]" > $Mari
@@ -56,7 +56,7 @@ function mariIcon() {
 function modoIcon() {
 
 	Modo=/usr/share/applications/Modo.desktop
-	MODOVERSION=Modo14.2v1
+	MODOVERSION=$( ls $HOMEUSER_PATH | grep -i "modo")
 
 	touch $Modo
 	echo "[Desktop Entry]" > $Modo
@@ -72,7 +72,7 @@ function modoIcon() {
 function katanaIcon() {
 
 	Katana=/usr/share/applications/Katana.desktop
-	KATANAVERSION=Katana4.0v1
+	KATANAVERSION=$( ls /opt | grep -i "katana")
 
 	touch $Katana
 	echo "[Desktop Entry]" > $Katana
