@@ -85,6 +85,21 @@ function katanaIcon() {
 	echo "Katana icon was created"	
 }
 
+function unrealIcon() {
+
+	Unreal=/usr/share/applications/Unreal.desktop
+
+	touch $Unreal
+	echo "[Desktop Entry]" > $Unreal
+	echo "Terminal=true" >> $Unreal
+	echo "Version=1.0" >> $Unreal
+	echo "Type=Application" >> $Unreal
+	echo "Exec=$HOMEUSER_PATH/UnrealEngine/Engine/Binaries/Linux/UE4Editor" >> $Unreal
+	echo "Name=Unreal" >> $Unreal
+	echo "Icon=$ICONPATH/unreal.png" >> $Unreal
+	echo "Unreal icon was created"
+}
+
 if [ -d $ICONPATH ]
 then
 	echo -e "\nthis script only work if the images in the folder $ICONPATH have the following names: \n\nnukeX.png \nnukeStudio.png \nmodo.png \nkatana.png \nmari.png\n"
@@ -97,6 +112,8 @@ then
 		if [ $x == "modo.png" ]; then modoIcon; fi;
 		if [ $x == "mari.png" ]; then mariIcon; fi;
 		if [ $x == "katana.png" ]; then katanaIcon; fi;
+		if [ $x == "unreal.png" ]; then unrealIcon; fi;
+
 	done
 	echo -e "\n------------------------------------------------------\n"
 else
@@ -105,3 +122,4 @@ else
 	echo -e "Each file should be named as: \n\nnukeX.png \nnukeStudio.png \nmodo.png \nkatana.png \nmari.png \nAfter that, run this script again"
 
 fi
+
