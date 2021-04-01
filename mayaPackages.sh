@@ -41,3 +41,4 @@ yes | yum install libcrypto.so.10
 yes | dnf install libpng15
 yes | dnf install compat-openssl10.x86_64
 yes | dnf install redhat-lsb-core
+yes | dnf install gtk2
