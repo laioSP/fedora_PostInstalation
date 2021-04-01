@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-yes | dnf install gnome-tweak-tool
-yes | snap install snap-store
 yes | snap install sublime-text --classic
 yes | snap install sc-controller
 yes | snap install natron
