@@ -8,3 +8,6 @@ dnf -y install ffmpeg
 dnf -y install ffmpeg-devel
 yes | dnf groupupdate Multimedia
 
+yes | dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
+yes | dnf install lame\* --exclude=lame-devel
+yes | dnf group upgrade --with-optional Multimedia
