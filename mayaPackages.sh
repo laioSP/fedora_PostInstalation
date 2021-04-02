@@ -42,3 +42,4 @@ yes | dnf install libpng15
 yes | dnf install compat-openssl10.x86_64
 yes | dnf install redhat-lsb-core
 yes | dnf install gtk2
+yes | dnf install libidn1.34
