@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo dnf install epel-release
+
+
 yes | dnf install gcc openssl-devel bzip2-devel 
 yes | dnf install python27
 yes | yum install mesa-libGLw
