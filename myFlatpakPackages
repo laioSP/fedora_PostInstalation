@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+
+flatpak install flathub com.github.tchx84.Flatseal
+
+flatpak install flathub io.missioncenter.MissionCenter
+
+flatpak install flathub com.spotify.Client
+
+flatpak install flathub page.codeberg.libre_menu_editor.LibreMenuEditor
+
+flatpak install flathub io.podman_desktop.PodmanDesktop
+
+flatpak install flathub io.github.dvlv.boxbuddyrs
+
+flatpak install flathub org.telegram.desktop
+
+flatpak install flathub app.zen_browser.zen
+
+flatpak install flathub org.chromium.Chromium
+
+flatpak install flathub com.abisource.AbiWord
+
+flatpak install flathub com.github.phase1geo.minder
+
+flatpak install flathub com.github.phase1geo.minder
