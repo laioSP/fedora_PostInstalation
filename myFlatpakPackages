@@ -21,3 +21,7 @@ flatpak install flathub org.chromium.Chromium -y
 flatpak install flathub com.abisource.AbiWord -y
 
 flatpak install flathub com.github.phase1geo.minder -y
+
+flatpak install flathub com.mattjakeman.ExtensionManager
+
+flatpak install flathub io.github.nokse22.Exhibit
