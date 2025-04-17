@@ -4,8 +4,6 @@ flatpak install flathub com.github.tchx84.Flatseal -y
 
 flatpak install flathub net.nokyan.Resources -y
 
-flatpak install flathub com.spotify.Client -y
-
 flatpak install flathub page.codeberg.libre_menu_editor.LibreMenuEditor -y
 
 flatpak install flathub io.podman_desktop.PodmanDesktop -y
