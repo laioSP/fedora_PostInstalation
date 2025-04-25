@@ -23,3 +23,5 @@ flatpak install flathub com.github.phase1geo.minder -y
 flatpak install flathub com.mattjakeman.ExtensionManager
 
 flatpak install flathub io.github.nokse22.Exhibit
+
+flatpak install flathub com.github.maoschanz.drawing
